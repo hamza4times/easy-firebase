@@ -1,0 +1,22 @@
+{
+  "name": "@hamzah-dev/easy-firebase",
+  "version": "1.0.0",
+  "description": "Easy Firebase utilities for JavaScript.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "keywords": [
+    "firebase",
+    "utilities"
+  ],
+  "author": "Hamzah",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^30.0.0"
+  }
+}
