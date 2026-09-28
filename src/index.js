@@ -1,9 +1,24 @@
-export function helloWorld(print = false) {
-    const message = "Hello, world!";
+export {startProject};
 
-    if (print) {
-        console.log(message);
-    }
+/* -------------------------------------------------------------------
+                            IMPORTS
+------------------------------------------------------------------- */
+import { initializeApp } from 'firebase/app';
 
-    return message;
+
+/* -------------------------------------------------------------------
+                         BASIC FUNCTIONS
+------------------------------------------------------------------- */
+function startProject(apiKey, authDomain, projectId, storageBucket, messagingSenderId, appId) {
+
+    const firebaseConfig = {
+        apiKey: String(apiKey),
+        authDomain: String(authDomain),
+        projectId: String(projectId),
+        storageBucket: String(storageBucket),
+        messagingSenderId: String(messagingSenderId),
+        appId: String(appId)
+    };
+
+    const app = initializeApp(firebaseConfig);
 }
